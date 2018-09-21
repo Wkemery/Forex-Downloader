@@ -24,7 +24,8 @@ for row in dlreader:
 
     fxnames = urlparts[-1].split("_")
     fxname = fxnames[0] + fxnames[1]
-    destfolder = "C:\\Users\wyatt\Documents\ForexData\\" + fxname
+    # destfolder = "C:\\Users\wyatt\Documents\ForexData\\" + fxname
+    destfolder = "testdir"
 
     with zipfile.ZipFile(urlparts[-1],"r") as zip_ref:
             zip_ref.extractall(destfolder)
